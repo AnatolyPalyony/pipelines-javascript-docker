@@ -22,6 +22,7 @@ steps:
 
 - task: Docker@2
   inputs:
+    repository: $(imageName)
     containerRegistry: 'MyDockerHub'
     command: 'push'
     tags: 'dirtykoyote/pipelines-javascript-docker:$(Build.BuildId)'
