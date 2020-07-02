@@ -23,5 +23,5 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'MyDockerHub'
-    repository: $(imageName)
+    repository: dirtykoyote/$(imageName)
     command: 'push'
