@@ -5,7 +5,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'pipelines-javascript-docker'
+  imageName: 'dirtykoyote/pipelines-javascript-docker'
 
 steps:
 - task: Docker@2
@@ -14,7 +14,6 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
-    tags: 'dirtykoyote/pipelines-javascript-docker:$(Build.BuildId)'
 
 - task: Docker@2
   inputs:
