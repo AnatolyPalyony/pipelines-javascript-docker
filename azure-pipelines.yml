@@ -23,5 +23,5 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'MyDockerHub'
-    repository: 'javascript-docker'
+    repository: $(imageName)
     command: 'push'
