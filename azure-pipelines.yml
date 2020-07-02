@@ -23,5 +23,5 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'MyDockerHub'
-    repository: dirtykoyote/pipelines-javascript-docker
+    repository: dirtykoyote
     command: 'push'
